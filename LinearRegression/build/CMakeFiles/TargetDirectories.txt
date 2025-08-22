@@ -1,6 +1,0 @@
-/home/ekkapot/teaching/ECESeminar/LinearRegression/build/CMakeFiles/fd.dir
-/home/ekkapot/teaching/ECESeminar/LinearRegression/build/CMakeFiles/symb.dir
-/home/ekkapot/teaching/ECESeminar/LinearRegression/build/CMakeFiles/fwd.dir
-/home/ekkapot/teaching/ECESeminar/LinearRegression/build/CMakeFiles/rev.dir
-/home/ekkapot/teaching/ECESeminar/LinearRegression/build/CMakeFiles/edit_cache.dir
-/home/ekkapot/teaching/ECESeminar/LinearRegression/build/CMakeFiles/rebuild_cache.dir

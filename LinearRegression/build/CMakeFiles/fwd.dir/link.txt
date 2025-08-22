@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/fwd.dir/fwd.cpp.o CMakeFiles/fwd.dir/lib/tls.cpp.o -o fwd 
