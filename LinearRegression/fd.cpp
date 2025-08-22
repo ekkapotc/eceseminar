@@ -31,6 +31,8 @@ double J(double m, double c, Vector<Tuple<double>> &data) {
 
 int main(int argc, char *argv[]) {
 
+  size_t constexpr MAX_EPOCHS{50};
+
   Vector<Tuple<double>> training_data = {
       {0.0, 1.0}, {1.0, 3.0}, {2.0, 5.0}, {3.0, 7.0}};
 
@@ -43,14 +45,14 @@ int main(int argc, char *argv[]) {
 
   double cost{J(m, c, training_data)};
 
-  std::cout << "Iteration " << 0 << std::endl;
+  std::cout << "Epoch " << 0 << std::endl;
   std::cout << "\t m = " << m << " , c = " << c
             << " , cost = " << J(m, c, training_data) << std::endl;
 
   double epsilon{1e-6};
   double step{1e-2};
 
-  for (auto i{0}; i < 5000; i++) {
+  for (auto i{0}; i < MAX_EPOCHS ; i++) {
 
     double dJdm = (J(m + epsilon, c, training_data) - cost) / epsilon;
     double dJdc = (J(m, c + epsilon, training_data) - cost) / epsilon;
@@ -58,7 +60,7 @@ int main(int argc, char *argv[]) {
     m -= step * dJdm;
     c -= step * dJdc;
 
-    std::cout << "Iteration " << i + 1 << std::endl;
+    std::cout << "Epoch " << i + 1 << std::endl;
 
     cost = J(m, c, training_data);
 
